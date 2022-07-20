@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        /* nav bar */
+        #top{
+     display: flex;
+     justify-content: right;
+     margin-top: 30px;
+     margin-left: -20px;
+    
+    }
+    #top>div{
+        margin: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+        
+    }
+    #navbar{
+        display: flex;
+        margin-top: 20px;
+    }
+    #navbar>div{
+        margin: auto;
+        font-size: 20px;
+        
+    }
+    #mid{
+        display: flex;
+        
+        
+    }
+    #mid>div{
+        margin: 10px;
+        font-size: 20PX;
+    }
+    #last{
+        background-color: #FFD265;
+        padding: 15px 24px;
+        color: #063C4D;
+        line-height: 18px;
+        border-radius: 20PX;
+        font-size: 16PX;
+        font-family: sans-serif;
+    }
+        /* end of nav bar */
+        #header{
+            background-image: linear-gradient(173deg, #063c4d, #042d3a);
+            border: 1px solid black;
+            height: 1000px;
+            width: 100%;
+        }
+        #writing{
+            width: 33%;
+            height: fit-content;
+            padding: 10px;
+            color: #Dad2d3;
+            margin-top: 250px;
+            margin-left:150px;
+            font-size: 25px;
+            line-height: 35px;
+            font-weight: bold;
+        }
+        #wp{
+            position: absolute;
+           left: 51%;
+            
+          right: auto;
+          bottom: 0%;
+           z-index: 2;
+           
+           height: 70%;
+        }
+        #wp2{
+            position: absolute;
+           left: 63%;
+          right: auto;
+          bottom: -16%;
+           z-index: 2;
+           height: 75%;
+        }
+        #email{
+            max-width: 518px;
+    height: 80px;
+    background: #ffffff; 
+     border: 1px solid #dae2e3;
+    box-sizing: border-box;
+    /* box-shadow: 0px 3px 14px rgb(6 60 77 / 8%); */
+    border-radius: 142px;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border: none;
+    /* margin-top: -250px; */
+    
+        }
+        #emailbox{
+            background: #ffffff; 
+    border: 1px solid #dae2e3; 
+        }
+        #grid_layout{
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           grid-template-rows: repeat(2,1fr);
+           width: 20%;
+           margin: auto;
+           margin-left: 130px;
+           height: 100px;
+           
+           
+        }
+        .logo{
+            padding: 10px;
+           margin-bottom: -35px;
+            margin-top: 60px;
+        }
+        #part_2{
+            overflow: hidden;
+    padding-top: 155px;
+    padding-bottom: 155px;
+    background-color: #f4fbfc;
+    margin-top: 160px;
+    width: 100%;
+    display: flex;
+    
+         } 
+         #element{
+           padding-left: 130px;
+           margin-top: -60px;
+           background-color: #f4fbfc;
+         }
+         .p{
+            margin-top: -60px;
+            margin-left: 80px;
+            font-size: 20px;
+            color: #576f76;
+            
+            width: 25%;
+            line-height: 24px;
+         }
+         .img img{
+            width: 50px;
+            margin-top: 40px;
+            height: 50px;
+            border-style: solid;
+    border-width: 1px;
+    border-color: #dae2e3;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px 0 rgb(118 146 154 / 10%);
+    padding: 10px;
+         }
+         #btn{
+            padding: 25px 60px;
+            background-color: #ffd265;
+            color: #063c4d;
+            border-radius: 80px;
+            border: none;
+            font-size: 20px;
+            margin-top: 40px;
+            font-weight: bold;
+         }
+    </Style>
+</head>
+<body>
+    <!-- navbar start -->
+    
+    <!-- <div id="top">
+        <div>Privacy Center</div>
+        <div>Contact Us</div>
+        <div>Support</div>
+        <div>Login</div>
+       </div>
+       <div id="navbar">
+        <div>
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg" alt="">
+        </div>
+        <div id="mid">
+    <div>Why LeadiQ</div>
+       
+    <div>Solutions</div>
+    <div>Resources</div>
+    <div>Pricing</div>
+        
+        <div id="last">Book Now</div>
+       </div>
+    <!-- nav bar end --> 
+    <div id="header">
+     <div id="writing">
+        <h1 style="font-size: 60px; color: white;">Prospect Smarter</h1>
+        <p>LeadIQ makes sales teams more efficient at outbound 
+            prospecting by capturing and sequencing contact
+             information with one click.</p>
+     </div>
+     <img id="wp" src="https://assets.website-files.com/60819f9be381394642b5659e/628e78dea1a51b019def8fc3_prospector-p-500.png" alt="pic1"/>
+    <img id="wp2" src="https://assets.website-files.com/60819f9be381394642b5659e/628e790730e8f2c418c890ae_interface-background-p-800.png" alt=""/>
+    </div> 
+    <!-- email form -->
+
+   
+    <form id="email" style="margin-top:-480px ;margin-left: 120px; padding: 20px; height: 80px;">
+        <input style="color: #ffffff  ; background-color:#ffffff ;font-size: 20px;
+        margin-bottom: -1px;" id="email" placeholder="Enter your work email" type="email"/>
+        <button style="margin-top:0px ; padding: 23px 70px;
+         border-radius: 100px; background-color: #ffd265; border: none;
+         " type="submit">
+            <span >Start free</span>
+        </button>
+    </form>
+   <p style="color: #b7b7b7;; margin-left: 150px; ">By signing up, you agree to the <a style="color: #1e9cce;">Terms of Use</a> and <a style="color: #1e9cce;">Privacy Policy</a>.</p>
+   <!-- 6 logo -->
+   <div id="grid_layout">
+    <div class="logo">
+        <img style="height: 52px;" src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4aaca47a037_Clari-01.svg" alt=""/>
+    </div>
+    <div class="logo">
+        <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc45bcd479f25_leadiq-logo-showpad.svg" alt=""/>
+    </div>
+    <div class="logo">
+        <img  src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4260147a03f_walkme-client-logo-03.svg" alt=""/>
+    </div>
+    <div class="logo">
+        <img  src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4431847a039_Segment-client-logo-04.svg" alt=""/>
+    </div>
+    <div class="logo">
+        <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4404a479f28_leadiq-logo-sitecore.svg" alt=""/>
+    </div>
+    <div class="logo">
+        <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc47c1d479f24_leadiq-logo-mulesoft.svg" alt=""/>
+    </div>
+   </div>
+  <!-- 2 part -->
+   <div id="part_2">
+     
+        <h2 style="color: #063c4d; margin: auto; text-align: center;  font-size: 45px; width: 49%;">Sales teams spend too much time on low value activities.</h2>
+    </div>
+        <div id="element">
+        <h5 style="font-size: 25px; margin-bottom: 20px;">LeadIQ allows you to:</h5>
+        <div class="img">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b03989e2987115690e4b_leadiq-activities-icon-eliminates.svg" alt="" />
+            <p class="p">Eliminate busy work </p>
+        </div>
+        <div class="img">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b0396fa45686e75d2ecc_leadiq-activities-icon-enriches.svg" alt="" />
+            <p class="p">Enrich aggregate your prospect's data</p>
+        </div>
+       
+        <div class="img">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b03925595b6cd5dd0861_leadiq-activities-icon-makes.svg" alt="" />
+            <p class="p">Make prioritization and authentic personalization easier</p>
+        </div>
+       
+    <button id="btn">Browse features</button>
+   
+   </div>
+
+</body>
+</html>
