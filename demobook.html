@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadIQ | Book a Demo</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+
+        font-family: 'Circular Std', sans-serif;
+        color: #063c4d;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+
+    .container {
+        width: 95%;
+        margin: auto;
+        padding: .8rem;
+    }
+
+    #top-nav {
+        display: flex;
+        justify-content: right;
+    }
+
+    #top-nav>a {
+        padding-left: 1rem;
+        font-size: 15px;
+        color: #949494;
+        font-weight: bold;
+        transition: all 0.3s ease-in;
+    }
+
+    #top-nav>a:hover {
+        color: #00d586;
+
+    }
+
+    #navbar {
+        position: fixed;
+        display: flex;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.3rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        width: 100%;
+        z-index: 500;
+        overflow: hidden;
+        transition: all 0.6s ease;
+    }
+
+
+    #navbar>div {
+        font-size: 20px;
+        color: #949494;
+
+
+    }
+
+    #mid {
+        display: flex;
+        margin: auto;
+
+
+    }
+
+    #mid>a {
+        margin: 10px;
+        font-size: 20PX;
+        color: #949494;
+        transition: all 0.3s ease-in;
+    }
+
+    #mid>a:hover {
+        color: #00d586;
+    }
+
+    .last {
+        background-color: #FFD265;
+        padding: 15px 24px;
+        color: #063C4D;
+        border-radius: 20PX;
+        font-size: 14PX;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: .5px;
+    }
+
+    .sticky {
+        top: 0;
+    }
+
+    /*  nabar end */
+
+    #book {
+        display: flex;
+
+        background-image: url(./Untitled.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 50%;
+        margin-top: -50px;
+        padding-top: 150px;
+        align-items: center;
+    }
+
+    #book>.book-left {
+        flex-basis: 50%;
+    }
+
+    #book>.book-left>h1 {
+        font-size: 50px;
+        line-height: 60px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: #063c4d;
+    }
+
+
+    #book>.book-left>div {
+        max-width: 500px;
+    }
+
+    #book>.book-left>div>p {
+        margin-bottom: 32px;
+        margin-top: 0;
+        color: #576f76;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #book>.book-left>.subtitle-caps-lock {
+        color: #00d586;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+    }
+
+    #book>.book-left>.content {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 17px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #book>.book-left>.content>div {
+
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        grid-column-start: span 1;
+        grid-column-end: span 1;
+        grid-row-start: span 1;
+        grid-row-end: span 1;
+    }
+
+    #book>.book-left>.content>div>.check {
+        width: 24px;
+        margin-right: 16px;
+    }
+
+    #book>.book-right {
+        flex-basis: 50%;
+        min-height: 600px;
+        position: relative;
+        z-index: 2;
+        padding: 50px 48px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dae2e3;
+        border-radius: 26px;
+        background-color: #fff;
+        box-shadow: 17px 17px 38px 0 rgb(6 60 77 / 5%);
+    }
+
+    #book>.book-right>h3 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 500;
+
+    }
+
+    #book>.book-right>form {
+        width: 100%;
+    }
+
+    #book>.book-right>form>.field {
+        margin-bottom: 18px;
+    }
+
+    #book>.book-right>form>.field>label {
+        font-family: Roboto;
+        font-size: 13px;
+        color: #063c4d;
+    }
+
+    #book>.book-right>form>.field>label>span {
+        color: red;
+    }
+
+    #book>.book-right>form>.field>input,
+    select {
+        display: inline-block;
+        height: 40px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 22px;
+        color: #33475b;
+        border: 1px solid #cbd6e2;
+        border-radius: 3px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+        min-height: 27px;
+    }
+
+    #book>.book-right>form>.field>input:not([type=file]) {
+        background-color: #f5f8fa;
+    }
+
+    #book>.book-right>form>.action {
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 0;
+
+    }
+
+    #book>.book-right>form>.action>input {
+        background: #ffd265;
+        color: #063c4d;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 16px;
+        padding: 10px 17px;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 17px 17px 38px 0 rgb(6 60 77 / 5%);
+    }
+
+    /* booking section end */
+
+
+    /* strategy section start */
+    #strategy-section {
+        overflow: hidden;
+        margin-bottom: 56px;
+        padding-top: 49px;
+        padding-bottom: 49px;
+        background-color: #f4fbfc;
+    }
+
+    #strategy-section>.text {
+        text-align: center;
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #strategy-section>.text>h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 38px;
+        line-height: 54px;
+        font-weight: 500;
+        font-weight: bold;
+    }
+
+    #strategy-section>.text>p {
+        margin-bottom: 10px;
+        color: #576f76;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    #strategy-section>.content-image {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-row-gap: 16px;
+        margin-top: 55px;
+        grid-column-gap: 80px;
+        grid-template-columns: 0.6fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    #strategy-section>.content-image>.left {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #strategy-section>.content-image>.left>.bullet-icon {
+        margin-bottom: 30px;
+        display: flex;
+        margin-top: 5px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #strategy-section>.content-image>.left>.bullet-icon>.img_div {
+        display: flex;
+        width: 64px;
+        height: 64px;
+        min-height: 64px;
+        min-width: 64px;
+        margin-right: 24px;
+        padding: 11px;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dae2e3;
+        border-radius: 16px;
+        background-color: #fff;
+        box-shadow: 3px 3px 6px 0 rgb(118 146 154 / 10%)
+    }
+
+    #strategy-section>.content-image>.left>.bullet-icon>.img_div>img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #strategy-section>.content-image>.left>.bullet-icon>p {
+        margin-bottom: 0px;
+        font-size: 20px;
+        color: #576f76;
+        line-height: 30px;
+    }
+
+    #strategy-section>.content-image>.left>a {
+        width: 170px;
+        display: inline-block;
+        border: 0;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 14px 28px;
+        border-color: transparent;
+        border-radius: 100px;
+        background-color: #ffd265;
+        box-shadow: 4px 4px 16px 0 rgb(255 210 101 / 16%);
+        transition: all 350ms ease;
+        color: #063c4d;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+
+    #strategy-section>.content-image>.right {
+        position: relative;
+    }
+
+    #strategy-section>.content-image>.right>img {
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .image-activities {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .background-activities-1 {
+        position: absolute;
+        left: auto;
+        top: 6%;
+        right: -6%;
+        bottom: auto;
+    }
+
+    .background-activities-2 {
+        position: absolute;
+        left: 5%;
+        top: auto;
+        right: auto;
+        bottom: 5%;
+    }
+
+    /* strategy section end */
+
+
+    /* company section */
+    #company-logos {
+        padding: 100px 24px;
+    }
+
+    #company-logos>.content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #company-logos>.content>.left {
+        max-width: 350px;
+        width: 40%;
+    }
+
+    #company-logos>.content>.left>h3 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: 700;
+    }
+
+    #company-logos>.content>.right {
+        display: grid;
+        width: 60%;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 0px;
+        grid-row-gap: 43px;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 60px;
+        grid-template-rows: auto;
+    }
+
+
+    #company-logos>.content>.right>.logo-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #company-logos>.content>.right>.logo-image>img {
+        display: inline-block;
+        width: 90%;
+    }
+
+
+    /* company section end */
+
+
+    /* reviews section  */
+    #reviews {
+        width: 80%;
+        padding: 30px;
+        margin: auto;
+        margin-bottom: 60px;
+        display: flex;
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        border-radius: 40px;
+        box-shadow: 17px 17px 38px 0 rgb(6 60 77 / 5%);
+
+    }
+
+    #reviews>.right>img {
+        margin-top: 30px;
+    }
+
+    #reviews>.right>h1 {
+        color: #063c4d;
+        line-height: 45px;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+
+
+    #reviews>.right>div {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    #reviews>.right>div>img {
+        width: 12%;
+    }
+
+    #reviews>.right>div>.content {
+        margin-left: 20px;
+    }
+
+    #reviews>.right>div>.content>h3 {
+        margin-bottom: 10px;
+    }
+
+    #reviews>.right>div>.content>p>span {
+        font-weight: bold;
+        color: #00d586;
+    }
+
+
+    /* reviews section end */
+
+
+
+    /* talk section */
+    #talk {
+        padding: 100px 24px;
+        padding-top: 142px;
+        padding-bottom: 142px;
+        background-color: #063c4d;
+        /* background: url(https://assets.website-files.com/60819f9…/6081c44…_leadiq-leader-background-1.svg), url(https://assets.website-files.com/60819f9…/6081c44…_leadiq-leader-background-2.svg);
+        background-position: 100% 100%, 0% 0%;
+        background-size: auto, auto;
+        background-repeat: no-repeat, no-repeat;*/
+    }
+
+    #talk>.content {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        color: white;
+    }
+
+
+    #talk>.content>h2 {
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 38px;
+        line-height: 54px;
+        font-weight: bold;
+    }
+
+    #talk>.content>.button {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    #talk>.content>.button>a {
+        width: 170px;
+        display: inline-block;
+        border: 0;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 14px 28px;
+        border-color: transparent;
+        border-radius: 100px;
+        background-color: #ffd265;
+        box-shadow: 4px 4px 16px 0 rgb(255 210 101 / 16%);
+        transition: all 350ms ease;
+        color: #063c4d;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+
+    /* talk section end */
+
+
+    /* footer section */
+
+    footer {
+        padding: 100px 24px;
+        padding-top: 60px;
+        padding-bottom: 32px;
+        border-top: 1px solid rgb(218, 226, 227);
+    }
+
+    footer>.content {
+        max-width: 1225px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    footer>.content>.top {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 16px;
+        margin-bottom: 65px;
+        column-gap: 50px;
+        grid-template-rows: auto;
+    }
+
+    footer>.content>.top>.left>.logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    footer>.content>.top>.right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    footer>.content>.top>.right>a {
+        width: 170px;
+        display: inline-block;
+        border: 0;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 14px 28px;
+        border-color: transparent;
+        border-radius: 100px;
+        background-color: #ffd265;
+        box-shadow: 4px 4px 16px 0 rgb(255 210 101 / 16%);
+        transition: all 350ms ease;
+        color: #063c4d;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 700;
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+
+    footer>.content>.bottom {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 16px;
+        margin-top: 32px;
+        column-gap: 50px;
+        grid-template-columns: 0.5fr 1fr 0.25fr;
+        grid-template-rows: auto;
+    }
+
+    footer>.content>.bottom>.left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    footer>.content>.bottom>.left>p {
+        color: rgb(87, 111, 118);
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    footer>.content>.bottom>.mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer>.content>.bottom>.mid>a {
+        margin-right: 10px;
+        margin-left: 5px;
+        color: rgb(87, 111, 118);
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 600;
+        transition: all 0.3s ease-in;
+    }
+
+    footer>.content>.bottom>.mid>a:hover {
+        color: #00d586;
+    }
+
+    footer>.content>.bottom>.right{
+        display: flex;
+    }
+
+    .facebook {
+        background-color: rgb(6, 120, 233);
+        display: flex;
+        width: 32px;
+        height: 32px;
+        margin-right: 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        transition: all 350ms ease 0s;
+    }
+
+    .twitter {
+        background-color: rgb(30, 161, 242);
+        display: flex;
+        width: 32px;
+        height: 32px;
+        margin-right: 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        transition: all 350ms ease 0s;
+    }
+
+    .linkedin {
+        background-color: rgb(7, 102, 193);
+        display: flex;
+        width: 32px;
+        height: 32px;
+        margin-right: 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        transition: all 350ms ease 0s;
+    }
+
+    .youtube {
+        margin-right: 0px;
+        background-color: red;
+        display: flex;
+        width: 32px;
+        height: 32px;
+        margin-right: 18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        transition: all 350ms ease 0s;
+    }
+
+
+    /* footer section end */
+</style>
+
+<body>
+
+    <!-- Top Nav -->
+    <div id="top-nav" class="container">
+        <a href="#">Privacy Center</a>
+        <a href="#">Support</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Login</a>
+    </div>
+    <!-- Top Nav End -->
+
+    <!--  Navbar -->
+    <div id="navbar" class="">
+        <div>
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg"
+                alt="">
+        </div>
+        <div id="mid">
+            <a href="#"> Why LeadiQ</a>
+            <a href="#"> Solutions</a>
+            <a href="#"> Resources</a>
+            <a href="#"> Pricing</a>
+
+        </div>
+        <a href="/demobook.html" class="last">Book Now</a>
+    </div>
+    <!--  Navbar End-->
+
+
+    <!-- booking section -->
+
+    <div id="book" class="container">
+        <div class="book-left">
+            <h1>Experience how LeadIQ boosts prospecting efficiently.
+            </h1>
+            <div>
+                <p>We’ve got a team of prospecting experts ready to help you hit revenue targets, support your team, and
+                    build better relationships with buyers.</p>
+            </div>
+
+            <p class="subtitle-caps-lock">WHAT WE’LL DISCOVER TOGETHER</p>
+            <div class="content">
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/628bac72a84c6697dbf8146e_check-green.svg"
+                        loading="lazy" alt="" class="check">
+                    <h4>What’s working, or not working, with your
+                        prospecting team.</h4>
+                </div>
+
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/628bac72a84c6697dbf8146e_check-green.svg"
+                        loading="lazy" alt="" class="check">
+                    <h4>How the best companies in the world structure
+                        outbound processing workflows.</h4>
+                </div>
+                <div>
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/628bac72a84c6697dbf8146e_check-green.svg"
+                        loading="lazy" alt="" class="check">
+                    <h4>How LeadIQ can help.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="book-right">
+            <h3>Book a demo😎</h3>
+            <form action="">
+                <div class="field">
+                    <label for="">First name <span>*</span></label><br />
+                    <input id="name" type="text" placeholder="" />
+                </div>
+                <div class="field">
+                    <label for="">Last name <span>*</span></label><br />
+                    <input id="name" type="text" placeholder="" />
+                </div>
+                <div class="field">
+                    <label for="">Work Email <span>*</span></label><br />
+                    <input id="name" type="text" placeholder="" />
+                </div>
+                <div class="field">
+                    <label for="">Phone No. <span>*</span></label><br />
+                    <input id="name" type="text" placeholder="" />
+                </div>
+                <div class="field">
+                    <label for="">Company Name <span>*</span></label><br />
+                    <input id="name" type="text" placeholder="" />
+                </div>
+                <div class="field">
+                    <label for="">Role <span>*</span></label><br />
+                    <select id="department" placeholder="">
+                        <option value="">Please Select</option>
+                        <option value="Closer">Closer</option>
+                        <option value="Marketin">Marketing</option>
+                        <option value="Sales Leadership">Sales Leadership</option>
+                        <option value="Sales Development">Sales Development</option>
+                        <option value="Revenue Operation">Revenue Operation</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <div class="action">
+                    <input type="submit" value="Let's Connect">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- booking section end-->
+
+    <!-- strategy section -->
+
+    <div id="strategy-section">
+        <div class="text">
+            <h2>Strategize with us</h2>
+            <p>This isn’t a boring old product demo. Here’s why you should setup some time to strategize with us:</p>
+        </div>
+
+        <div class="content-image container">
+            <div class="left">
+                <div class="bullet-icon">
+                    <div class="img_div">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/62a249185e9996ecf9467478_check-out-02.svg"
+                            alt="">
+                    </div>
+                    <p>You’ll get a customized buying experience.</p>
+                </div>
+                <div class="bullet-icon">
+                    <div class="img_div">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/62a249185e9996ecf9467478_check-out-02.svg"
+                            alt="">
+                    </div>
+                    <p>We’ll set you up with a pilot program so your team can try us out on their own time.</p>
+                </div>
+                <div class="bullet-icon">
+                    <div class="img_div">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/62a249185e9996ecf9467478_check-out-02.svg"
+                            alt="">
+                    </div>
+                    <p>Worst-case scenario, you’ll be able to book meetings for free.</p>
+                </div>
+                <a href="#book">Book a demo</a>
+            </div>
+            <div class="right">
+                <div class="container-right-activities">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/61681bbedd3fc2974173a5c8_LeadIQ-Integrations%202.png"
+                        loading="eager"
+                        sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, (max-width: 1279px) 96vw, 1225px"
+                        alt="" class="image-activities">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b42dfc784618c92acce7_leadiq-activities-background-2.svg"
+                        alt="" class="background-activities-1">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b42d78a93f84724ea09f_leadiq-activities-background-1.svg"
+                        alt="" class="background-activities-2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- strategy section end -->
+
+
+    <!-- company logo section -->
+
+    <div id="company-logos">
+        <div class="content">
+            <div class="left">
+                <h3>Top sales teams have adopted
+                    the LeadIQ way</h3>
+            </div>
+            <div class="right">
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4aaca47a037_Clari-01.svg"
+                        alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc45bcd479f25_leadiq-logo-showpad.svg"
+                        alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4260147a03f_walkme-client-logo-03.svg"
+                        alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4431847a039_Segment-client-logo-04.svg"
+                        alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc4404a479f28_leadiq-logo-sitecore.svg"
+                        alt="">
+                </div>
+                <div class="logo-image">
+                    <img src="https://assets.website-files.com/6220f0eff47bc4199f479ed8/6220f0eff47bc47c1d479f24_leadiq-logo-mulesoft.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- company logo section end -->
+
+
+
+    <!-- dummy slider -->
+    <div id="reviews">
+        <div class="left">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/609bf5cbe627762ca111d52b_leadiq-%20clari-featured-image.svg"
+                alt="">
+        </div>
+        <div class="right">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b633c9bc20456cf9deed_leadiq-walkme-logo.svg"
+                alt="">
+            <h1>“Without LeadIQ, our outbound team’s workflow would be disjointed and time consuming.”</h1>
+            <div>
+                <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b193c428f097cbf5483a6_leadiq-iterable-quote-avatar-david.jpg"
+                    alt="">
+                <div class="content">
+                    <h3>Aaron Zukoski</h3>
+                    <p>Director of Business Development, <span>WalkMe</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- dummy slider end -->
+
+
+    <!-- talk section -->
+    <div id="talk">
+        <div class="content">
+            <h2>Ready to try LeadIQ? Let's talk</h2>
+            <div class="button">
+                <a href="#book">Book a demo</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- talk section end -->
+
+
+    <!-- footer top -->
+    <footer>
+        <div class="content">
+            <div class="top">
+                <div class="left">
+                    <div class="logo">
+                        <a href="/demobook.html">
+                            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#book">Book a demo</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <p>
+                        © LeadIQ, Inc. All rights reserved.
+                    </p>
+                </div>
+                <div class="mid">
+                    <a href="#">Privacy Policy </a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security </a>
+                    <a href="#">Do Not Sell My Personal Information</a>
+                </div>
+                <div class="right">
+                    <a href="https://www.facebook.com/leadiqapp/" class="facebook w-inline-block">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e5452d50f1f7a3fb3_leadiq-social-media-facebook.svg"
+                            loading="eager" alt="">
+                    </a>
+                    <a href="https://twitter.com/leadiq" class="twitter w-inline-block">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4eee94984fa4071d52_leadiq-social-media-twitter.svg"
+                            loading="eager" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/company/leadiq-inc/" class="linkedin w-inline-block">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e288f5700bcb39bfd_leadiq-social-media-linkedin.svg"
+                            loading="eager" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCNb5aT5w8EIMX4QKFuFL_Yg" class="youtube w-inline-block">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e9e444d3a934f9719_leadiq-social-media-youtube.svg"
+                            loading="eager" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer top end -->
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        let navbar = document.querySelector("#navbar");
+        let menu = document.querySelector("#mid")
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+
+</html>
