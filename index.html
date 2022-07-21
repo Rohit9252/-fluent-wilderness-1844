@@ -5,192 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <Style>
-        /* nav bar */
-        #top{
-     display: flex;
-     justify-content: right;
-     margin-top: 30px;
-     margin-left: -20px;
-    
-    }
-    #top>div{
-        margin: 20px;
-        font-size: 15px;
-        font-family: sans-serif;
-        
-    }
-    #navbar{
-        display: flex;
-        margin-top: 20px;
-    }
-    #navbar>div{
-        margin: auto;
-        font-size: 20px;
-        
-    }
-    #mid{
-        display: flex;
-        
-        
-    }
-    #mid>div{
-        margin: 10px;
-        font-size: 20PX;
-    }
-    #last{
-        background-color: #FFD265;
-        padding: 15px 24px;
-        color: #063C4D;
-        line-height: 18px;
-        border-radius: 20PX;
-        font-size: 16PX;
-        font-family: sans-serif;
-    }
-        /* end of nav bar */
-        #header{
-            background-image: linear-gradient(173deg, #063c4d, #042d3a);
-            border: 1px solid black;
-            height: 1000px;
-            width: 100%;
-        }
-        #writing{
-            width: 33%;
-            height: fit-content;
-            padding: 10px;
-            color: #Dad2d3;
-            margin-top: 250px;
-            margin-left:150px;
-            font-size: 25px;
-            line-height: 35px;
-            font-weight: bold;
-        }
-        #wp{
-            position: absolute;
-           left: 51%;
-            
-          right: auto;
-          bottom: 0%;
-           z-index: 2;
-           
-           height: 70%;
-        }
-        #wp2{
-            position: absolute;
-           left: 63%;
-          right: auto;
-          bottom: -16%;
-           z-index: 2;
-           height: 75%;
-        }
-        #email{
-            max-width: 518px;
-    height: 80px;
-    background: #ffffff; 
-     border: 1px solid #dae2e3;
-    box-sizing: border-box;
-    /* box-shadow: 0px 3px 14px rgb(6 60 77 / 8%); */
-    border-radius: 142px;
-    display: flex;
-    align-items: center;
-    padding: 10px 10px;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    text-decoration: none;
-    border: none;
-    /* margin-top: -250px; */
-    
-        }
-        #emailbox{
-            background: #ffffff; 
-    border: 1px solid #dae2e3; 
-        }
-        #grid_layout{
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
-           grid-template-rows: repeat(2,1fr);
-           width: 20%;
-           margin: auto;
-           margin-left: 130px;
-           height: 100px;
-           
-           
-        }
-        .logo{
-            padding: 10px;
-           margin-bottom: -35px;
-            margin-top: 60px;
-        }
-        #part_2{
-            overflow: hidden;
-    padding-top: 155px;
-    padding-bottom: 155px;
-    background-color: #f4fbfc;
-    margin-top: 160px;
-    width: 100%;
-    display: flex;
-    
-         } 
-         #element{
-           padding-left: 130px;
-           margin-top: -60px;
-           background-color: #f4fbfc;
-         }
-         .p{
-            margin-top: -60px;
-            margin-left: 80px;
-            font-size: 20px;
-            color: #576f76;
-            
-            width: 25%;
-            line-height: 24px;
-         }
-         .img img{
-            width: 50px;
-            margin-top: 40px;
-            height: 50px;
-            border-style: solid;
-    border-width: 1px;
-    border-color: #dae2e3;
-    border-radius: 16px;
-    background-color: #fff;
-    box-shadow: 3px 3px 6px 0 rgb(118 146 154 / 10%);
-    padding: 10px;
-         }
-         #btn{
-            padding: 25px 60px;
-            background-color: #ffd265;
-            color: #063c4d;
-            border-radius: 80px;
-            border: none;
-            font-size: 20px;
-            margin-top: 40px;
-            font-weight: bold;
-         }
-    </Style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+  
 </head>
 <body>
     <!-- navbar start -->
     
-    <!-- <div id="top">
-        <div>Privacy Center</div>
-        <div>Contact Us</div>
-        <div>Support</div>
-        <div>Login</div>
-       </div>
-       <div id="navbar">
-        <div>
-            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg" alt="">
+      <!-- Top Nav -->
+    <div id="top-nav" class="container">
+        <a href="#">Privacy Center</a>
+        <a href="#">Support</a>
+        <a href="#">Contact Us</a>
+        <a href="#">
+            <span class='bi bi-lock' style='color:#33db55'></span>
+            Login</a>
+    </div>
+    <!-- Top Nav End -->
+
+    <!--  Navbar -->
+    <!-- <div id="navbar" class="">
+        <div class="navbar-content">
+            <a class="lead-logo" href="index.html">
+            <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg"
+                alt="">
+            </a>
+            <nav class="nav1">
+                <div class="nav-div1">
+                    <div class="nav-div2">
+                        <div class="nav-head">Why LeadIQ</div>
+                        <div class="arrow"></div>
+                    </div>
+                    <nav class="nav2">
+                        <a class="nav-ele">Features</a>
+                        <a class="nav-ele">Success Stories</a>
+                    </nav>
+                </div>
+                <div  class="nav-div1">
+                    <div class="nav-div2">
+                        <div class="nav-head">solutions</div>
+                        <div class="arrow"></div>
+                    </div>
+                    <nav>
+                        <div>
+                            <div>
+                                <div>By Use Case</div>
+                                <a>Eliminating Busy Work</a>
+                                <a>Strategic Prospecting</a>
+                                <a>Data Accuracy</a>
+                            </div>
+                            <div>
+                                <div>By Role</div>
+                                <a>Sales Leaders</a>
+                                <a>Revenue Operations</a>
+                                <a>Sales Professionals</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+                    <div>
+                        <div>Resources</div>
+                        <div></div>
+                    </div>
+                    <nav>
+                        <a href="">Blog</a>
+                        <a href="">Support</a>
+                        <a href="">Careers</a>
+                        <a href="">Press</a>
+                        <a href="">Privacy Center</a>
+                    </nav>
+                </div>
+                <a>Pricing</a>
+                <div>
+                    <a>privacy Center</a>
+                    <a href="">Support</a>
+                    <a href="">
+                        <span class="login-icon-2"></span>
+                        Login
+                    </a>
+                    <a href="">Get Started</a>
+                </div>
+            </nav>
+            <div>
+                <a>Book A demo</a>
+            </div>
         </div>
-        <div id="mid">
-    <div>Why LeadiQ</div>
+         -->
        
-    <div>Solutions</div>
-    <div>Resources</div>
-    <div>Pricing</div>
-        
-        <div id="last">Book Now</div>
-       </div>
     <!-- nav bar end --> 
     <div id="header">
      <div id="writing">
@@ -239,7 +141,8 @@
   <!-- 2 part -->
    <div id="part_2">
      
-        <h2 style="color: #063c4d; margin: auto; text-align: center;  font-size: 45px; width: 49%;">Sales teams spend too much time on low value activities.</h2>
+        <h2 style="color: #063c4d; margin: auto; text-align: center;  font-size: 45px; width: 49%;
+        margin-top: -30px;margin-bottom: 50px;">Sales teams spend too much time on low value activities.</h2>
     </div>
         <div id="element">
         <h5 style="font-size: 25px; margin-bottom: 20px;">LeadIQ allows you to:</h5>
@@ -260,6 +163,270 @@
     <button id="btn">Browse features</button>
    
    </div>
+    <!-- side part -->
 
+    <div>
+        <img id="cover1" src="https://assets.website-files.com/60819f9be381394642b5659e/6081b42dfc784618c92acce7_leadiq-activities-background-2.svg" alt="" />
+        <img  id="cover2" src="https://assets.website-files.com/60819f9be381394642b5659e/6081b42d78a93f84724ea09f_leadiq-activities-background-1.svg" alt="" />
+        <img id="im" src="https://assets.website-files.com/60819f9be381394642b5659e/61681bbedd3fc2974173a5c8_LeadIQ-Integrations%202.png" alt=""/>  
+    </div>
+   <!-- 3part -->
+   <div class="part3">
+    <div class="con">
+        <div class="card1">
+            <div class="card2">
+                <div class="card3">
+                    <div class="card4">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b679baa783d764f6fc80_leadiq-image-testimonial-icon.svg" alt=""/>
+                    </div>
+                </div>
+                <div class="card5">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b633c9bc20456cf9deed_leadiq-walkme-logo.svg" alt=""/>
+                 <div class="head">
+                    “Without LeadIQ, our outbound team’s workflow would be disjointed and time consuming.”
+                 </div>
+                 <div class="dc">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081b707a0940538e46fc580_leadiq-autor-image.jpg" alt=""/>
+                <div>
+                    <div class="autor-name">Aaron Zukoski</div>
+                    <div class="autor-title">"Director of Business Development, "
+                        <span class="color">WalkMe</span>
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+        </div>
+        <img class="bg1" src="https://assets.website-files.com/60819f9be381394642b5659e/6081b810fbae85943d9fd9c7_leadiq-background-testimonial-2.svg" alt=""/>
+        <img class="bg2" src="https://assets.website-files.com/60819f9be381394642b5659e/6081b80de8f2326eb44d6bf5_leadiq-background-testimonial-1.svg" alt=""/>
+    </div>
+   </div>
+   <!-- part4 -->
+   <div class="part4">
+    <div class="container-default">
+        <div style="max-width: 600px; box-sizing: border-box; display: block;">
+            <h2 class="tip">"Locating contact data isn't your biggest problem—it's just the tip of the iceberg."</h2>
+            <p class="tanp">Modern sales requires engagement across the entire buying team.</p>
+        <div>
+            <a class="demo">Book a demo</a>
+            <a class="start">Start free</a>
+        </div>
+        </div>
+    </div>
+    <img id="iceberg" src="https://assets.website-files.com/60819f9be381394642b5659e/6081bb440430db95e36d238d_leadiq-iceberg-image-compleat.svg" alt=""/>
+   </div>
+   <!-- part5 -->
+   <div id="part5">
+    <div class="container-default" style="box-sizing:border-box ; display: block;">
+        <h2 class="res">LeadIQ gives users their most valuable resource: time</h2>
+        <img id="imo1" src="https://assets.website-files.com/60819f9be381394642b5659e/6081bbee7bda8bc839c7769c_leadiq-image-withou-tleadiq.svg" alt="" />
+        <img id="imo2" src="https://assets.website-files.com/60819f9be381394642b5659e/6081bbfc9caa873ef9cab4ae_leadiq-image-with-leadiq.svg" alt="" />
+    </div>
+   </div>
+   <!-- part6 -->
+   <div class="part6">
+    <div class="container-default" style="display:block ;">
+        <div class="pen1">
+            <div class="pen2">
+                <h2 class="line">Clari Calls LeadIQ the Clear Choice for Prospecting</h2>
+                <p>"Clari's SDR team saved over 50 hours a week using 
+                    LeadIQ's Data Enrichment features. A process that used 
+                    to take 20 minutes per prospect now takes less than five.
+                     As a result, SDRs can put more time into personalizing
+                      outreach efforts, resulting in far higher response 
+                      rates."</p>
+                      <div class="pen3" ></div>
+                      <div class="pen4">
+                        <img class="pen_img" src="https://assets.website-files.com/60819f9be381394642b5659e/6244926a9e639ff03275a232_6081bd8e265b091959856f58_lediq-autor-kyle-coleman.png" alt="" />
+                     <div>
+                        <div class="pen5">
+                            “LeadIQ saves our sales team more than "
+                            <span class="color">600 hours</span>
+                            "a quarter."
+                        </div>
+                        <p class="name">Kyle Coleman</p>
+                        <p class="exp">VP Revenue Growth & Enablement</p>
+                     </div>
+                    </div>
+                    <a class="sec_btn">Read case study</a>
+            </div>
+            <div class="pen6">
+                <a class="card">
+                    <div class="pen7">
+                        <img class="pen7_img" src="https://assets.website-files.com/60819f9be381394642b5659e/6081bf0acaedecfe58dd95ad_leadiq-case-study-image.svg" alt=""/>
+                    </div>
+                    <div class="pen8">
+                        <p class="pen8_para">"Clari Calls LeadIQ the Clear Choice for Prospecting. "
+                            <br>
+                        </p>
+                        <p class="pen8_para2">
+                            "Revenue is easy to calculate but difficult to predict, and working out the imapact of marketing, sales..."
+                        </p>
+                    <div class="pen8_para3">
+                        Read case study
+                    </div>
+                   
+                    </div>
+                </a>
+                <img class="pen8_imo1" src="https://assets.website-files.com/60819f9be381394642b5659e/6081c1b60eb70e424bb5d121_leadiq-case-study-background-2.svg" alt=""/>
+                <img class="pen8_imo2" src="https://assets.website-files.com/60819f9be381394642b5659e/6081c1b6fbae857af2a01631_leadiq-case-study-background-1.svg" alt=""/>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- part7 -->
+   <div class="part7">
+    <div class="container-default">
+        <div class="con_part7">
+            <h2 class="part7_head">What will your sales reps' workflow look like with LeadIQ?</h2>
+        </div>
+        <div class="grid_lay">
+            <div class="card-steps">
+                <div class="icon_card">
+                    <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b193c4102b13e73c49b87_leadiq-features-capture.svg" alt=""/>
+                </div>
+                <h3>Identify</h3>
+                <p class="part7_para">
+                    "Identify a target account, locate it on LinkedIn Sales Navigator, and open the LeadIQ extension. "
+                </p>
+            </div>
+<!-- card2 -->
+<div class="card-steps">
+    <div class="icon_card">
+        <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b1f00eb62061365271b18_leadiq-features-governance.svg" alt=""/>
+    </div>
+    <h3>Filter</h3>
+    <p class="part7_para">
+        "Narrow down the list of contacts using LinkedIn's filters. Research every prospect and capture their information with LeadIQ. "
+    </p>
+</div>
+<!-- card3 -->
+<div class="card-steps">
+    <div class="icon_card">
+        <img src="https://assets.website-files.com/60819f9be381394642b5659e/609b193c88272f287bd18fec_leadiq-features-aalytics.svg" alt=""/>
+    </div>
+    <h3>Automate</h3>
+    <p class="part7_para">
+        "Allow LeadIQ to route the contacts to the proper sequence, 
+        while also updating records. You and your team are now 
+        ready to prospect."
+    </p>
+</div>
+
+        </div>
+    </div>
+   </div>
+       <!-- part8 -->
+       <div class="part8">
+        <div class="part8_con">
+            <h2 class="part8_head">LeadIQ is an industry leader</h2>
+            <div class="part8_gridlay">
+                <div class="part8_grid_con" >
+                    <img class="part8_grid_cont" src="https://assets.website-files.com/60819f9be381394642b5659e/62c44c7abb2d9e9e5ff638f6_Mid-market-2022.png" alt=""/>
+                </div>
+                <div class="part8_grid_con" >
+                    <img class="part8_grid_cont" src="https://assets.website-files.com/60819f9be381394642b5659e/62c44c8cc60dbc6b0b668fa0_Leader-2022.png" alt=""/>
+                </div>
+                <div class="part8_grid_con" >
+                    <img class="part8_grid_cont" src="https://assets.website-files.com/60819f9be381394642b5659e/62c44ca926d23d256d6ca7dd_Leader-Small-Business.png" alt=""/>
+                </div>
+                <div class="part8_grid_con" >
+                    <img class="part8_grid_cont" src="https://assets.website-files.com/60819f9be381394642b5659e/62c44d0dc0229d300548086f_Momentum-Leader-2022.png" alt=""/>
+                </div>
+                <div class="part8_grid_con" >
+                    <img class="part8_grid_cont" src="https://assets.website-files.com/60819f9be381394642b5659e/62c44d3f7c02faa91ceda486_Most-implementable-2022.png" alt=""/>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!-- footer -->
+       <div class="footer">
+        <div class="container-default">
+            <div class="footer-layout">
+                <div class="footer-logo">
+                    <a class="footer-leadIQ">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081a538174f4d6bc01bdd27_leadiq-logo.svg" alt=""/>
+                    </a>
+                </div>
+                <div class="footer-btns">
+                    <a id="demo-btn">Book a demo</a>
+                    <a id="start-btn">Start free</a>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div class="footer-layout2">
+                <div class="footer-content">
+                    <div class="footer-title">Why LeadIQ</div>
+                    <a class="footer-group">Features</a>
+                    <a class="footer-group">Pricing</a>
+                    <a class="footer-group-last">Success Stories</a>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-title">Solutions</div>
+                    <div class="footer-two">
+                        <div class="left-footer">
+                            <a class="footer-group">Sales Leaders</a>
+                            <a class="footer-group">Revenue Ops</a>
+                            <a class="footer-group-last">Sales Professionals</a>
+                        </div>
+                        <div class="right-footer">
+                            <a class="footer-group">Eliminating Busy Work</a>
+                            <a class="footer-group">Strategic Prospecting</a>
+                            <a class="footer-group-last">Data Accuracy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-row3">
+                    <div class="footer-title">Resources</div>
+                    <a class="footer-group">Blog</a>
+                    <a class="footer-group">Support</a>
+                    <a class="footer-group">Careers</a>
+                    <a class="footer-group">Press</a>
+                    <a class="footer-group-last">Privacy Center</a>
+                </div>
+                <div class="footer-row3">
+                    <div class="footer-title">Contact</div>
+                    <a class="footer-contact">
+                        <img class="footer-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081c958408db1111a5f6e4b_leadiq-icon-contact-phone.svg" alt=""/>
+                    <div>1-888-653-2347</div>
+                    </a>
+                    <a class="footer-contact">
+                        <img class="footer-icon" src="https://assets.website-files.com/60819f9be381394642b5659e/6081c9584a52ae9f54e9d71c_leadiq-icon-contact-email.svg" alt="" />
+                     <div>support@leadiq.com</div>
+                    </a>
+                </div>
+            </div>
+            <div class="break"></div>
+            <div class="footer-bottom">
+                <div class="con-left">
+                    <div class="copyright">© LeadIQ, Inc. All rights reserved.</div>
+                </div>
+                <div class="middle-footer">
+                    <a class="footer-group-last">Privacy Policy</a>
+                    <a class="footer-group-last  foot">Terms of Service</a>
+                    <a class="footer-group-last  foot">Security</a>
+                    <a class="footer-group-last">Do Not Sell My Personal Information</a>
+                </div>
+                <div class="foot-right">
+                    <a class="facebook social-media">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e5452d50f1f7a3fb3_leadiq-social-media-facebook.svg" alt="" />
+                    </a>
+                    <a class="twitter social-media">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4eee94984fa4071d52_leadiq-social-media-twitter.svg" alt="" />
+                    </a>
+                    <a class="linkedin social-media">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e288f5700bcb39bfd_leadiq-social-media-linkedin.svg" alt="" />
+                    </a>
+                    <a class="youtube social-media">
+                        <img src="https://assets.website-files.com/60819f9be381394642b5659e/6081cb4e9e444d3a934f9719_leadiq-social-media-youtube.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+       </div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
