@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+nav{
+display:  flex;
+margin-top: 20px ;
+justify-content: space-around;
+align-items: center;
+color: gray;
+font-size: 14px;
+}
+body{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+nav>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    
+}
+nav>div:nth-child(1)>img{
+    width: 200px;
+    height: 55px;
+}
+nav>div>ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+nav>div>ul>li{
+    text-decoration: none;
+    list-style: none;
+}
+#first{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 80px;
+}
+#first img{
+ width: 550px;
+}
+#first>div>input{
+    width: 550px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+input:focus{
+    outline: none;
+}
+#first>div>span{
+    position: absolute;
+    left: 120px;
+    top: 290px;
+}
+#first>div>h1{
+    color:#355964 ;
+    font-size: 40px;
+}
+span>i{
+    width: 5px;
+
+}
+#second{
+    width: 100%;
+    height: 850px;
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    background-color: #f7f7f8 ;
+}
+#second>div{
+    /* margin-top: 70px; */
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    gap:  20px;
+    /* margin-top: 5px; */
+}
+#second>div>div{
+    width: 352px;
+    height: 225px;
+    border: 1px solid gray;
+}
+#second>div>div>img{
+    width:60px;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+#second>div>div{
+    text-align: center;
+    margin-bottom: -54px;
+    border-radius: 10px;
+}
+#second>div>div>h3{
+    margin-top: 30px;
+}
+#second>div:last-child{
+    display: flex;
+
+}
+#second>div:last-child>div{
+    width: 530px;
+    border: 1px solid gray;
+    margin-top: 10px;
+
+}
+#second>div>div:hover{
+    border: none;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#img-logo{
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1400px;
+    position: fixed;
+    top: 600px;
+    
+}
+#img-logo>img{
+    width: 100%;
+    border-radius: 30px;
+}
+footer{
+    background-color: #355964;
+    display: flex;
+    color:  white;
+    justify-content: space-around;
+    gap: 60px;
+}
+li{
+    list-style: none;
+}
+footer>div{
+    width: 400px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 13px;
+    align-items: center;
+}
+footer>div>ul{
+    display: flex;
+    gap: 40px;
+}
+footer img{
+    width: 80px;
+    height: 40px;
+}
+footer>div:nth-child(2){
+    margin-right: 658px;
+}
+@media screen and (min-width: 500px) and (max-width: 768px){
+    nav{
+        display:  block;
+        margin-top: 0px ;
+        width: 100%;
+
+    }
+    #first{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #first img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 300px;
+    }
+    #first>div>span{
+        position: relative;
+        /* left: 5%;
+        top: 32.5%; */
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second>div{
+        display: block;
+        margin: auto;
+
+
+    }
+    #second>div>div{
+        width: 90%;
+        height: 225px;
+        margin: auto;
+        margin-top: 15px;
+
+    }
+    #second>div{
+        margin-bottom: -50px;
+    }
+    #second>div:last-child{
+        display: block;
+        margin-bottom: 40px;
+    
+    }
+    #second>div:last-child>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    
+    }
+    footer{
+    
+        display: block;
+    }
+    footer>div{
+        display: block;
+        margin: auto;
+    
+    }
+    footer img{
+      display: block;
+      margin: auto;
+    
+    }
+    footer>div:nth-child(2){
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+} 
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    nav{
+        display:  block;
+        margin-top: 0px ;
+        width: 100%;
+
+    }
+    #first{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #first img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 300px;
+    }
+    #first>div>span{
+        position: relative;
+        /* left: 5%;
+        top: 32.5%; */
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second>div{
+        display: block;
+        margin: auto;
+
+
+    }
+    #second>div>div{
+        width: 90%;
+        height: 225px;
+        margin: auto;
+        margin-top: 15px;
+
+    }
+    #second>div{
+        margin-bottom: -50px;
+    }
+    #second>div:last-child{
+        display: block;
+        margin-bottom: 40px;
+    
+    }
+    #second>div:last-child>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    
+    }
+    footer{
+    
+        display: block;
+    }
+    footer>div{
+        display: block;
+        margin: auto;
+    
+    }
+    footer img{
+      display: block;
+      margin: auto;
+    
+    }
+    footer>div:nth-child(2){
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 2000px){
+    nav{
+        display:  flex;
+        margin-top: 0px ;
+        width: 100%;
+
+    }
+    #first{
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+    #first img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 300px;
+    }
+    #first>div>span{
+        position:absolute;
+        /* left: 5%; */
+        top: 83%;
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second>div{
+        display: flex;
+        margin: auto;
+
+
+    }
+    #second>div>div{
+        width: 90%;
+        height: 225px;
+        margin: auto;
+        margin-top: 15px;
+
+    }
+    #second>div{
+        margin-bottom: -50px;
+    }
+    #second>div:last-child{
+        display: flex;
+        margin-bottom: 40px;
+    
+    }
+    #second>div:last-child>div{
+        width: 90%;
+        margin: auto;
+        /* margin-bottom: 20px; */
+    
+    }
+    footer{
+    
+        display: flex;
+    }
+    footer>div{
+        display: block;
+        margin: auto;
+    
+    }
+    footer img{
+      display: block;
+      margin: auto;
+    
+    }
+    footer>div:nth-child(2){
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 499px){
+    nav{
+        display:  block;
+        margin-top: 0px ;
+        width: 100%;
+
+    }
+    #first{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #first img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        height: 300px;
+    }
+    #first>div>span{
+        position: relative;
+        /* left: 5%;
+        top: 32.5%; */
+    }
+    #first>div>input{
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    #second{
+        margin-top: 100px;
+        height: auto;
+        background-color: white;
+    }
+    #second>div{
+        display: block;
+        margin: auto;
+
+
+    }
+    #second>div>div{
+        width: 90%;
+        height: 225px;
+        margin: auto;
+        margin-top: 15px;
+
+    }
+    #second>div{
+        margin-bottom: -50px;
+    }
+    #second>div:last-child{
+        display: block;
+        margin-bottom: 40px;
+    
+    }
+    #second>div:last-child>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    
+    }
+    footer{
+    
+        display: block;
+    }
+    footer>div{
+        display: block;
+        margin: auto;
+    
+    }
+    footer img{
+      display: block;
+      margin: auto;
+    
+    }
+    footer>div:nth-child(2){
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+} 
