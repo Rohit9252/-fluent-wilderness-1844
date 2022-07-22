@@ -16,7 +16,7 @@
             min-width: 20px;
         }
         
-        #form{
+        #form1{
             /* border: 1px solid black; */
             width: 550px;
             height: 650px;
@@ -93,8 +93,8 @@
     </div>
 
     
-     <div id="form">
-
+     <div id="form1">
+        <form id="form">
         <div id="head1">
             <h1>Welcome to LeadIQ</h1>
         </div>
@@ -111,7 +111,7 @@
 
         <p>Work Email</p>
 
-        <input type="email" placeholder="Enter Your Email" >
+        <input type="email" placeholder="Enter Your Email" id="email" >
          
         <input type="checkbox" id="checkbox">
         
@@ -121,16 +121,66 @@
 
         <div id="logbtn-div">
 
-            <button id="logbtn">Continue</button>
+            <button id="logbtn" onclick="signUp()">Continue</button>
 
         </div>
 
         <p id="para1">Already a user? Login</p>
 
-        
+    </form>
      </div>
 </body>
 </html>
 <script>
-    
+
+let arr = [];
+
+let signUp = ()=>{
+   event.preventDefault();
+   let form = document.getElementById('form');
+   
+   let email = form.email.value;
+      let data = new Submit(email);
+      arr.push(data);
+      localStorage.setItem('users',JSON.stringify(arr));
+         if(arr[0].email == form.email.value){
+            alert('allowed')
+         }
+         else{
+            alert('Not allowed')
+         }
+   console.log(arr);
+   let temp = arr.validEmail(email);
+   console.log(temp);
+   form.reset(); 
+};
+
+class Submit{
+   constructor(e){
+      
+      this.email = e;
+      
+   }
+      
+      validEmail(email){
+         let data = JSON.parse(localStorage.getItem('users'));
+            if(email == data[0].email){
+               alert('Email Registered')
+            }
+            else{
+               return true;
+            }
+      }
+      
+
+} 
+
+
+
+
+
+
+
+
+
 </script>

@@ -29,7 +29,7 @@
             font-weight: bolder;
             background-color: #374C7A;
         }
-        #form{
+        #form1{
             /* border: 1px solid black; */
             width: 550px;
             height: 650px;
@@ -98,7 +98,9 @@
     <div id="btn">
         <button id="btn1">Sign up</button>
     </div>
-     <div id="form">
+     <div id="form1">
+
+        <form id="form">
 
         <div id="img1">
             <img src="./images/logo-stripe.png" id="circleimg">
@@ -114,26 +116,102 @@
 
         <p>Email</p>
 
-        <input type="email" placeholder="Enter Your Email" >
+        <input type="email" placeholder="Enter Your Email" id="email">
 
         <p>Password</p>
 
-        <input type="password" placeholder="Enter Your Password" >
+        <input type="password" placeholder="Enter Your Password" id="password">
 
         </div>
 
         <div id="logbtn-div">
 
-            <button id="logbtn">LOGIN</button>
+            <button id="logbtn" onclick="login()">LOGIN</button>
 
         </div>
 
         <p id="para1">I forgot my password</p>
 
         <p id="para">Signin with SSO</p>
+    </form>
      </div>
 </body>
 </html>
 <script>
+
+// function Credentials(email,password){
+    
+//     this.email=email;
+
+//     this.password=password;
+// }
+
+// let user = JSON.parse(localStorage.getItem('signup'))
+// console.log(user)
+
+
+// let loginfunc=()=>{
+// event.preventDefault()
+// let email = document.getElementById("email").value ;
+// let password = document.getElementById("password").value ;
+// if(user==null){
+//     alert(` Please create an account`)
+// }
+
+// let login= new Credentials(email,password)
+// if(user.email==email && user.password==password){
+//     alert(`Login Sucessfully`)
+//     localStorage.setItem("login",JSON.stringify(login));
+//         window.location.href="index.html";
+
+// }
+// else{
+//     alert('User not exist')
+// }
+
+// localStorage.setItem("signup",JSON.stringify(userdata));
+
+// window.location.href='login.html'
+
+
+// }
+// document.getElementById("form").addEventListener("logbtn",loginfunc)
+
+let data = JSON.parse(localStorage.getItem('users')) || [];
+
+let login = ()=>{
+    event.preventDefault()
+    let form = document.getElementById('form');
+
+    let email = form.email.value;
+    let password = form.password.value;
+
+
+    let Data = new Submit(email,password)
+
+    console.log(data)
+    for(let i=0; i<data.length; i++){
+        if(data[i].email != Data.email){
+            alert('User doesnt exist, Sign Up');
+        }
+        // else if(data[i].password != Data.password){
+        //     alert('Wrong credentials');
+        // }
+        else{
+            alert('login SuccessFully!');
+        }
+    }
+
+    
+
+}
+class Submit{
+
+    constructor(email,password){
+
+        this.email=email;
+        this.password=password;
+    }
+}
     
 </script>
