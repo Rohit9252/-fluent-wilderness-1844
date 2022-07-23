@@ -7,6 +7,7 @@
 #top-nav {
    display: flex;
    justify-content: right;
+   padding: 10px 20px;
 }
 
 #top-nav>a {
@@ -103,6 +104,7 @@
        height: 60px;
        width: 350px;
        font-size: 18px;
+       margin-top: 30px;
        font-family: sans-serif;
    }
    #plan{
@@ -783,7 +785,7 @@ div{
 .footer{
    padding-top: 60px;
    padding-bottom: 32px;
-   border-top: 1px solid #dae2e3;
+   /* border-top: 1px solid #dae2e3; */
    padding: 100px 24px;
 }
 .footer-layout{

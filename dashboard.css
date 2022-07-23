@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
+/* *{
     margin: 0px;
     padding: 0px;
-}
+} */
 body{
     margin: 0px;
     padding: 0px;
@@ -96,6 +96,7 @@ margin-left: 20px;
    width: 50%;
    display: block;
    margin: auto;
+   margin-top: 40px;
  
 
 }
@@ -281,8 +282,8 @@ margin-left: 20px;
 }
 .side-div>span{
     position: absolute;
-    left: 1023px;
-    top: 494px;
+    left: 1031px;
+    top: 519px;
 }
 /* .side-div>hr{
     width: 90%;
@@ -414,8 +415,7 @@ margin-left: 15px;
     margin-top: 8px;
 }
 table{
-
-    width: 95%;
+    width: 90%;
     margin: auto;
     margin-top: 0px;
     text-align: center;
@@ -425,10 +425,12 @@ table>thead>tr{
     display: flex;
     height: 35px;
     font-size: 13px;
-    background-color: 
-    #fafafa ;
+    background-color:#fafafa ;
     width: 100%;
     border:none
+}
+thead>tr{
+    width: 90%;
 }
 table>thead>tr:hover{
     background-color: #edf1f5 ;
@@ -498,6 +500,10 @@ thead>tr>td:nth-child(7){
     align-items: center;
 
 }
+tr{
+    /* border: 1px solid red; */
+  
+}
 tbody>tr{
     /* border: 1px solid red; */
     display: flex;
@@ -559,7 +565,7 @@ thead>tr>td:nth-child(5){
 tbody>tr>td:nth-child(6){
     width: 140px;
     /* border: 1px solid red; */
-margin-left: 100px;
+/* margin-left: 100px; */
     text-align: center;
     height: 30px;
  display: flex;
@@ -568,7 +574,7 @@ margin-left: 100px;
 tbody>tr>td:nth-child(7){
     width: 140px;
     /* border: 1px solid red; */
-    /* margin-left: 98px; */
+    margin-left: 98px;
     text-align: center;
     height: 30px;
     display: flex;

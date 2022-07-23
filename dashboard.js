@@ -49,8 +49,8 @@ let dashboard = () => {
   heading2.innerText = "Top Prospectors";
   let searchinput = document.createElement("input");
   searchinput.placeholder = "Search";
-  let spam = document.createElement("span");
-  spam.innerHTML = `<i class="fa-solid fa-magnifying-glass" style="color: gray"></i>`;
+  // let spam = document.createElement("span");
+  // spam.innerHTML = `<i class="fa-solid fa-magnifying-glass" style="color: gray"></i>`;
   let div7 = document.createElement("div");
   div7.innerHTML = `<h4>Name</h4> <h4>Capture</h4>`;
   div7.setAttribute("class", "text-gap");
@@ -62,7 +62,7 @@ let dashboard = () => {
   div8.append(checkbox, sign);
   div8.setAttribute("class", "div-8");
   sign.innerText = "Unassigned";
-  div6.append(heading2, spam, searchinput, hr, div7, div8);
+  div6.append(heading2, searchinput, hr, div7, div8);
   div4.setAttribute("class", "dash-grid");
   let hr1 = document.createElement("hr");
   let hr2 = document.createElement("hr");
@@ -591,7 +591,7 @@ let tablebody = () => {
                  style="color: gray"></i></td>
          <td><input type="checkbox"> Email<i class="fa-solid fa-magnifying-glass"
                  style="color: gray"></i></td>
-         <td>Group</td>
+         <td id="sorting">Group</td>
          <td>Maniging Group</td>
          <td>Intergration</td>
          <td>Stndard credit</td>
