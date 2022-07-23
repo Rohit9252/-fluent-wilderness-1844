@@ -1,4 +1,8 @@
 /* navbar */
+body{
+    scroll-behavior: smooth;
+}
+
 .container {
     width: 95%;
     margin: auto;
@@ -72,6 +76,9 @@
     align-items: center;
 
 
+}
+input:focus{
+    outline: none;
 }
 
 #mid>a {
@@ -165,6 +172,7 @@
           margin: auto;
           margin-left: 130px;
           height: 100px;
+          align-items: center;
           
           
        }
@@ -874,7 +882,7 @@ a{
     display: inline-block;
 }
 .img{
-    display: inline-block;
+    /* display: inline-block; */
     max-width: 100%;
     vertical-align: middle;
     border: 0;

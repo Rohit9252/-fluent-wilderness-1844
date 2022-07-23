@@ -32,6 +32,7 @@ body {
 #top-nav {
     display: flex;
     justify-content: right;
+    padding: 10px 20px;
 }
 
 #top-nav>a {
@@ -212,6 +213,7 @@ a{
     grid-auto-columns: 1fr;
     grid-template-rows: auto;
     grid-row-gap: 16px;
+    padding: 10px 136px
 }
 .footer-content{
     display: flex;

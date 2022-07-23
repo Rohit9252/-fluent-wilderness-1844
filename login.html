@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="icon" href="https://account.leadiq.com/app/favicon.png">
     <style>
-        body{
+        body {
             background-color: white;
             /* background-image: url("./images/background.jpg"); */
         }
-        #logo{
+
+        #logo {
             margin-top: 60px;
             margin-left: 60px;
             min-width: 20px;
         }
-        #btn{
+
+        #btn {
             display: flex;
             justify-content: right;
             margin-right: 60px;
             margin-top: -50px;
         }
-        #btn1{
+
+        #btn1 {
             padding: 18px 25px 18px 25px;
             border-radius: 10px;
             font-size: 17px;
@@ -29,7 +34,8 @@
             font-weight: bolder;
             background-color: #374C7A;
         }
-        #form1{
+
+        #form1 {
             /* border: 1px solid black; */
             width: 550px;
             height: 650px;
@@ -38,180 +44,204 @@
             background-color: white;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
-        #img1{
-            
+
+        #img1 {
+
             margin-left: 240px;
             padding-top: 30px;
-        }    
-        #googleimg{
+        }
+
+        #googleimg {
             margin-left: 80px;
             margin-top: 10px;
         }
-        #or{
+
+        #or {
             text-align: center;
         }
-        #inpt{
+
+        #inpt {
             margin-left: 80px;
         }
-        input{
+
+        input {
             width: 80%;
             padding: 10px;
-            
+
         }
-        #logbtn-div{
-           margin-left: 60px;
+
+        #logbtn-div {
+            margin-left: 60px;
             margin-top: 40px;
-            
+
         }
-        #logbtn{
+
+        #logbtn {
             padding: 20px;
             width: 90%;
             background-color: #374C7A;
             color: white;
             font-size: 20px;
         }
-        #para1{
+
+        #para1 {
             margin-left: 80px;
         }
-        #para{
+
+        #para {
             text-align: right;
             margin-top: -34px;
             margin-right: 65px;
         }
-        #imglogo{
+
+        #imglogo {
             width: 120px;
         }
-        #circleimg{
+
+        #circleimg {
             width: 70px;
         }
-        #gogimg{
+
+        #gogimg {
             width: 210px;
             margin-left: 90px;
         }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button {
+            border: none;
+        }
     </style>
 </head>
+
 <body>
     <div id="logo">
         <a href="login.html"><img src="./images/logo-green.svg" id="imglogo"></a>
     </div>
 
     <div id="btn">
-        <button id="btn1">Sign up</button>
+        <button id="btn1"><a href="signup.html"> Sign up</a></button>
     </div>
-     <div id="form1">
+    <div id="form1">
 
         <form id="form">
 
-        <div id="img1">
-            <img src="./images/logo-stripe.png" id="circleimg">
-        </div>
+            <div id="img1">
+                <img src="./images/logo-stripe.png" id="circleimg">
+            </div>
 
-        <div id="googleimg">
-            <a href="https://www.gmail.com/"><img src="./images/google-sign.png" id="gogimg"></a>
-        </div>
+            <div id="googleimg">
+                <a href="https://www.gmail.com/"><img src="./images/google-sign.png" id="gogimg"></a>
+            </div>
 
-        <p id="or">OR</p>
+            <p id="or">OR</p>
 
-        <div id="inpt">
+            <div id="inpt">
 
-        <p>Email</p>
+                <p>Email</p>
 
-        <input type="email" placeholder="Enter Your Email" id="email">
+                <input type="email" placeholder="Enter Your Email" id="email">
 
-        <p>Password</p>
+                <p>Password</p>
 
-        <input type="password" placeholder="Enter Your Password" id="password">
+                <input type="password" placeholder="Enter Your Password" id="password">
 
-        </div>
+            </div>
 
-        <div id="logbtn-div">
+            <div id="logbtn-div">
 
-            <button id="logbtn" onclick="login()">LOGIN</button>
+                <button id="logbtn" onclick="login()">LOGIN</button>
 
-        </div>
+            </div>
 
-        <p id="para1">I forgot my password</p>
+            <p id="para1">I forgot my password</p>
 
-        <p id="para">Signin with SSO</p>
-    </form>
-     </div>
+            <p id="para">Signin with SSO</p>
+        </form>
+    </div>
 </body>
+
 </html>
 <script>
 
-// function Credentials(email,password){
-    
-//     this.email=email;
+    // function Credentials(email,password){
 
-//     this.password=password;
-// }
+    //     this.email=email;
 
-// let user = JSON.parse(localStorage.getItem('signup'))
-// console.log(user)
+    //     this.password=password;
+    // }
 
-
-// let loginfunc=()=>{
-// event.preventDefault()
-// let email = document.getElementById("email").value ;
-// let password = document.getElementById("password").value ;
-// if(user==null){
-//     alert(` Please create an account`)
-// }
-
-// let login= new Credentials(email,password)
-// if(user.email==email && user.password==password){
-//     alert(`Login Sucessfully`)
-//     localStorage.setItem("login",JSON.stringify(login));
-//         window.location.href="index.html";
-
-// }
-// else{
-//     alert('User not exist')
-// }
-
-// localStorage.setItem("signup",JSON.stringify(userdata));
-
-// window.location.href='login.html'
+    // let user = JSON.parse(localStorage.getItem('signup'))
+    // console.log(user)
 
 
-// }
-// document.getElementById("form").addEventListener("logbtn",loginfunc)
+    // let loginfunc=()=>{
+    // event.preventDefault()
+    // let email = document.getElementById("email").value ;
+    // let password = document.getElementById("password").value ;
+    // if(user==null){
+    //     alert(` Please create an account`)
+    // }
 
-let data = JSON.parse(localStorage.getItem('users')) || [];
+    // let login= new Credentials(email,password)
+    // if(user.email==email && user.password==password){
+    //     alert(`Login Sucessfully`)
+    //     localStorage.setItem("login",JSON.stringify(login));
+    //         window.location.href="index.html";
 
-let login = ()=>{
-    event.preventDefault()
-    let form = document.getElementById('form');
+    // }
+    // else{
+    //     alert('User not exist')
+    // }
 
-    let email = form.email.value;
-    let password = form.password.value;
+    // localStorage.setItem("signup",JSON.stringify(userdata));
+
+    // window.location.href='login.html'
 
 
-    let Data = new Submit(email,password)
+    // }
+    // document.getElementById("form").addEventListener("logbtn",loginfunc)
 
-    console.log(data)
-    for(let i=0; i<data.length; i++){
-        if(data[i].email != Data.email){
-            alert('User doesnt exist, Sign Up');
+    let data = JSON.parse(localStorage.getItem('users')) || [];
+
+    let login = () => {
+        event.preventDefault()
+        let form = document.getElementById('form');
+
+        let email = form.email.value;
+        let password = form.password.value;
+
+
+        let Data = new Submit(email, password)
+
+        console.log(data)
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].email != Data.email) {
+                alert('User doesnt exist, Sign Up');
+            }
+            // else if(data[i].password != Data.password){
+            //     alert('Wrong credentials');
+            // }
+            else {
+                alert('login SuccessFully!');
+                window.location.href = "dashboard.html";
+            }
         }
-        // else if(data[i].password != Data.password){
-        //     alert('Wrong credentials');
-        // }
-        else{
-            alert('login SuccessFully!');
+
+
+
+    }
+    class Submit {
+
+        constructor(email, password) {
+
+            this.email = email;
+            this.password = password;
         }
     }
 
-    
-
-}
-class Submit{
-
-    constructor(email,password){
-
-        this.email=email;
-        this.password=password;
-    }
-}
-    
 </script>

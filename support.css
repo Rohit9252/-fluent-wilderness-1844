@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); 
 
 *{
     padding: 0px;
@@ -16,6 +16,10 @@ body{
     color: gray;
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+    color:gray;
+}
 nav>div{
     display: flex;
     justify-content: space-around;
@@ -23,7 +27,7 @@ nav>div{
     gap: 20px;
     
 }
-nav>div:nth-child(1)>img{
+nav>div:nth-child(1)>a>img{
     width: 200px;
     height: 55px;
 }
@@ -57,6 +61,11 @@ nav>div>ul>li{
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
+    /* position: relative; */
+}
+
+a:hover{
+    color:   #00d586 ;
 }
 input:focus{
     outline: none;
@@ -323,86 +332,7 @@ footer>div:nth-child(2){
         text-align: center;
     }
 }
-@media screen and (min-width: 1400px) and (max-width: 2000px){
-    nav{
-        display:  flex;
-        margin-top: 0px ;
-        width: 100%;
 
-    }
-    #first{
-        display: flex;
-        width: 100%;
-        text-align: center;
-    }
-    #first img{
-        width: 90%;
-        display: block;
-        margin: auto;
-        height: 300px;
-    }
-    #first>div>span{
-        position:absolute;
-        /* left: 5%; */
-        top: 83%;
-    }
-    #second{
-        margin-top: 100px;
-        height: auto;
-        background-color: white;
-    }
-    #second{
-        margin-top: 100px;
-        height: auto;
-        background-color: white;
-    }
-    #second>div{
-        display: flex;
-        margin: auto;
-
-
-    }
-    #second>div>div{
-        width: 90%;
-        height: 225px;
-        margin: auto;
-        margin-top: 15px;
-
-    }
-    #second>div{
-        margin-bottom: -50px;
-    }
-    #second>div:last-child{
-        display: flex;
-        margin-bottom: 40px;
-    
-    }
-    #second>div:last-child>div{
-        width: 90%;
-        margin: auto;
-        /* margin-bottom: 20px; */
-    
-    }
-    footer{
-    
-        display: flex;
-    }
-    footer>div{
-        display: block;
-        margin: auto;
-    
-    }
-    footer img{
-      display: block;
-      margin: auto;
-    
-    }
-    footer>div:nth-child(2){
-        display: block;
-        margin: auto;
-        text-align: center;
-    }
-}
 @media screen and (min-width: 300px) and (max-width: 499px){
     nav{
         display:  block;
